@@ -1,43 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Stoil Georgiev & Stoicho Todorov">
-	<meta name="description" content="Палетни стоки, покупко-продажба на стоки.">
-  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
-  <title>Paletnistoki.bg онлайн магазин за стоки.</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stoil Georgiev & Stoicho Todorov">
+    <meta name="description" content="Палетни стоки, покупко-продажба на стоки.">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <title>Paletnistoki.bg онлайн магазин за стоки.</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/abeb6fec91.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <header>
-    <div class="container m-5">
-      <a class="branding" href="index.html" style="--i:1;">
-        <img src="images/logo.png" alt="Logo" href="index.html">				
-        Paletnistoki.bg
-      </a>
-      
-      <nav class="main-nav">
-        <!-- when creating another page, move the active class to the correct button -->
-        <a class="menu-item active" href="index.html">Home</a>
-        <div class="menu-item dropdown">
-            <span class="dropdown-toggle">Каталог</span>
-            <div class="dropdown-content">
-                <a href="#">Стока</a>
+    <header>
+        <div class="container m-5">
+            <a class="branding" href="index.html" style="--i:1;">
+                <img src="images/logo.png" alt="Logo" href="index.html">
+                Paletnistoki.bg
+            </a>
+
+            <nav class="main-nav">
+                <!-- when creating another page, move the active class to the correct button -->
+                <a class="menu-item active" href="index.html">Home</a>
+                <div class="menu-item dropdown">
+                    <span class="dropdown-toggle">Каталог</span>
+                    <div class="dropdown-content">
+                        <a href="#">Стока</a>
+                    </div>
+                </div>
+                <a class="menu-item" href="#">Contacts</a>
+            </nav>
+            <div class="mobile-nav" id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li><a class="active elem" href="index.html">Home</a></li>
+                </ul>
             </div>
+    </header>
+
+    <!-- <div class="">
+    <nav>
+      <ul>
+        <li><i class="fa-solid fa-tree"></i></li>
+        <li><i class="fa-solid fa-person"></i></li>
+        <li><i class="fa-solid fa-truck"></i></li>
+        <li><i class="fa-solid fa-person-digging"></i></li>
+      </ul>
+    </nav>
+  </div> -->
+
+
+
+    <div class="flex-catalog">
+
+
+        <div class="flex-catalog-child">
+            <a href="your-link-url">
+                <div class="icon">
+                    <i class="fa-solid fa-bars size"></i>
+                </div>
+                <div class="text">
+                    <span>Каталог</span>
+                </div>
+            </a>
         </div>
-        <a class="menu-item" href="#">Contacts</a>  
-      </nav>	
-      <div class="mobile-nav" id="hamburger-icon" onclick="toggleMobileMenu(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <ul class="mobile-menu">
-          <li><a class="active elem" href="index.html">Home</a></li>
-        </ul>
-      </div>
-    
-    
-  </header> 
+   
+
+
+    <div class="flex-catalog-child">
+        <a href="#">
+            <div class="icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="text">
+                <span>Профил</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="flex-catalog-child">
+        <a href="#">
+            <div class="icon">
+                <i class="fa-solid fa-couch"></i>
+            </div>
+            <div class="text">
+                <span>Палет</span>
+            </div>
+        </a>
+    </div>
+
+
+    <div class="flex-catalog-child">
+        <a href="#">
+            <div class="icon">
+                <i class="fa-solid fa-square-parking"></i>
+            </div>
+            <div class="text">
+                <span>продукт</span>
+            </div>
+        </a>
+    </div>
+
+
+
+</div>
 </body>
+
 </html>

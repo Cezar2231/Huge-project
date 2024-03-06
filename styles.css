@@ -177,3 +177,18 @@ ul a {
 .open .bar2 { opacity: 0; }
 .open .bar3 { -webkit-transform: rotate(45deg) translate(-6px, -8px);transform: rotate(45deg) translate(-6px, -8px); }
 
+
+
+.flex-catalog {
+	display: flex;
+    width: 100%;
+	background: linear-gradient(90deg,  rgb(220, 241, 230), rgb(208, 225, 216) );
+	align-items: center;
+	text-align: center;
+    justify-content: space-around;
+   
+
+	min-height: 100px;
+	
+  }
+
