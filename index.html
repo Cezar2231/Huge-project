@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Stoil Georgiev & Stoicho Todorov">
+	<meta name="description" content="Палетни стоки, покупко-продажба на стоки.">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+  <title>Paletnistoki.bg онлайн магазин за стоки.</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container m-5">
+      <a class="branding" href="index.html" style="--i:1;">
+        <img src="images/logo.png" alt="Logo" href="index.html">				
+        Paletnistoki.bg
+      </a>
+      
+      <nav class="main-nav">
+        <!-- when creating another page, move the active class to the correct button -->
+        <a class="menu-item active" href="index.html">Home</a>
+        <div class="menu-item dropdown">
+            <span class="dropdown-toggle">Каталог</span>
+            <div class="dropdown-content">
+                <a href="#">Стока</a>
+            </div>
+        </div>
+        <a class="menu-item" href="#">Contacts</a>  
+      </nav>	
+      <div class="mobile-nav" id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a class="active elem" href="index.html">Home</a></li>
+        </ul>
+      </div>
+    
+    
+  </header> 
+</body>
+</html>
